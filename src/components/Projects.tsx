@@ -72,8 +72,8 @@ const projectData: Record<string, Project[]> = {
         description: "A modern and interactive developer portfolio built with TypeScript.",
         image: '/portfolio.png', 
         technologies: ["TypeScript", "React", "Tailwind CSS"],
-        websiteUrl: "https://personalportfoliovishnu.vercel.app/",
-        sourceCodeUrl: "https://github.com/medamvishnu27/Personal_portfolio.git"
+        websiteUrl: "https://portfolio-six-sable-l9i19rs1vh.vercel.app/",
+        sourceCodeUrl: "https://github.com/Gopi9989/Portfolio"
       }
     ]
   };
