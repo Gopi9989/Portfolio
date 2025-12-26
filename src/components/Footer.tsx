@@ -5,7 +5,8 @@ const Footer = () => {
   const socialLinks = [
     { icon: LuGithub, href: "https://github.com/Gopi9989" },
     { icon: LuLinkedin, href: "https://www.linkedin.com/in/gopikrishna06/" },
-    { icon: LuMail, href: "mailto:gopikrishna.it10@gmail.com" }
+    { icon: LuMail, href: "mailto:gopikrishna.it10@gmail.com" },
+    { image: "/image%20copy.png", href: "https://www.credly.com/users/mannava-gopi-krishna" }
   ];
 
   return (
@@ -41,7 +42,11 @@ const Footer = () => {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <social.icon className="text-2xl" />
+                {social.icon ? (
+                  <social.icon className="text-2xl" />
+                ) : (
+                  <img src={social.image} alt="social" className="h-6 w-6 object-contain" />
+                )}
               </motion.a>
             ))}
           </motion.div>
